@@ -4,6 +4,15 @@
 
 <h1 class="display-1">Home Page</h1>
 
+
+<div class="list-group">
+
+    {% for item in all_lists %}
+        <a class="list-group-item list-group-item-action bg-black rounded-pill w-25" style="color: #20c997; margin-bottom: 7px;">{{item.name}}</a>
+    {% endfor %}
+
+</div>
+
 {% endblock %}
 
 

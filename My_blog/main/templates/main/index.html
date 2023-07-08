@@ -19,11 +19,6 @@
                 <div class="navbar-nav">
                     <a class="navbar-brand text-info" href="/">Home</a>
                     <a class="navbar-brand text-info" href="/create">Create</a>
-                    {% block navbar %}
-                    {% for item in all_lists %}
-                        <a class="navbar-brand" style="color: #20c997 ;" href="/{{item.name}}">{{item.name}}</a>
-                    {% endfor %}
-                    {% endblock %}
                 </div>
             </div>
           </nav>
