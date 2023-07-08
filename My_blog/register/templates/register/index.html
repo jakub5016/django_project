@@ -1,0 +1,22 @@
+{% extends 'main/index.html' %}
+
+{% load crispy_forms_tags %}
+{% load crispy_forms_filters %} 
+
+{% block content %}
+
+<h1 class="display-1">Create new account</h1>
+
+<form method="post" class="form-group">
+    {% csrf_token %}
+    {{ form|crispy}}
+    <p>     </p>
+    <button type="submit" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Thanks for creating account">Register</button>
+</form>
+
+
+{% endblock %}
+
+
+
+{% block title %}Registration{% endblock %}
