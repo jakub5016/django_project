@@ -11,5 +11,5 @@ def register(response):
     else:
         form = RegisterForm() 
 
-    return render(response, "register/index.html", {"form": form})
+    return render(response, "register/register.html", {"form": form})
 # Create your views here.
