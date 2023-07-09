@@ -28,6 +28,9 @@
         <div id="content" name ="content" class="text-light">
             {% block content %}
             {% endblock %}
+            {% if not user.is_authenticated  %}
+                <p>Please <a href="/login" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> log in</a> to see any of the following content</p>
+            {% endif %}    
         </div>
     
     
